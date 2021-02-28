@@ -5,6 +5,7 @@ import scraper.bhphotovideo
 import scraper.canadacomputers
 import scraper.carrefour
 import scraper.costco
+import scraper.cdiscount
 import scraper.ebgames
 import scraper.fnac
 import scraper.microcenter

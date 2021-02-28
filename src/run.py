@@ -36,6 +36,9 @@ if version_path.is_file():
 args = parse_args()
 log_format = '{levelname:.1s}{asctime} [{name}] {message}'
 log_level = logging.DEBUG if args.verbose else logging.INFO
+# TODEL
+log_level = logging.DEBUG 
+
 logging.basicConfig(level=log_level, format=log_format, style='{')
 if args.log:
     logger = logging.getLogger()

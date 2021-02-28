@@ -1,0 +1,1 @@
+DCInfosCallback({"country":"FR","region":"B9","city":"Cevins","latitude":45.588,"longitude":6.4551,"postal_code":"73730","browser":"Google Chrome","ip":"78.126.15.23","traffic":null})

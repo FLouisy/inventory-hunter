@@ -1,0 +1,17 @@
+---
+refresh_interval: 2 # seconds
+max_price: 750 # dollars
+urls:
+  - https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG
+  - https://www.amazon.fr/gp/product/B08H93ZRK9/ref=ox_sc_act_title_1?smid=A1X6FK5RDHNB96&psc=1
+  - https://www.amazon.it/dp/B08KKJ37F7/
+  - https://www.carrefour.fr/p/console-playstation-5-edition-standard-sony-interactive-0711719395201
+  - https://www.cdiscount.com/jeux-pc-video-console/ps5/console-ps5-sony-ps5/f-1035001-son3665540797413.html
+  - https://www.cdiscount.com/jeux-pc-video-console/ps5/console-ps5/l-1035001.html#_his_
+  - https://www.fnac.com/Console-Sony-PS5-Edition-Standard/a14119956/w-4?awc=12665_1614547496_24118c92e93c7c71842ae51df296f93f&ectrans=1&Origin=Awin169249
+  - https://www.auchan.fr/sony-console-ps5-edition-standard/p-c1315865?awc=7728_1614547520_95837ce51f8821a6b80e5822bc8b2d8b&utm_medium=affiliation&utm_source=zanox&utm_campaign=generique&utm_content=0&utm_term=169249
+  - https://www.e.leclerc/cat/consoles-ps5?awc=15135_1614547767_8a5f8d68b03d0f58faaab039058d4f03&utm_source=Affiliation_Awin_169249&utm_medium=leclerc&utm_campaign=Discount%20Code&utm_content=169249
+  - https://www.darty.com/nav/achat/informatique/ps4/consoles_ps4/sony_sony_ps5_standard__4876148.html?awc=7735_1614547864_cd83cfdbf608031244d12467cc688832&ectrans=1&dartycid=aff_169249_generique_awin
+  - https://reservation.coursesu.com/
+  - https://www.boulanger.com/ref/1147567?xtor=AL-6875-[2]-[1395037010]-[deeplink]&utm_medium=affiliation&utm_source=effinity&utm_campaign=2&utm_content=1395037010
+  - https://www.ldlc.com/fiche/PB00386358.html

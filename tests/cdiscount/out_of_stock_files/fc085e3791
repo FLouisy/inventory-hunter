@@ -1,0 +1,17 @@
+window["ccs_cc_loadQueue"].push({
+"ldn": "ccs_cc_ld_fc085e3791"
+,
+"styleSheets": [
+"https://cdn.cnetcontent.com/redirect/gp-subscriber-files/95a1af1d/fc085e3791/Style.Minified/20200708145417.css"]
+,
+"inlineScript": "\r\nccs_cc_loge_bb72aa(\u0027d003c053\u0027);\r\nfunction ccs_cc_gete_params_bb72aa(id){switch(id){\r\ncase \u0027d003c053\u0027: return { et: \u0027ProductHookLoad\u0027, serverParams: {\"ServerTime\":\"1\",\"ResultCode\":\"100\"} };break;\r\n}}\r\nfunction ccs_cc_loge_bb72aa(id, clientParams){\r\nvar eventInfo = ccs_cc_gete_params_bb72aa(id); if(!eventInfo) return;\r\nccs_cc_log.logEvent (eventInfo.et, \u0027SKey=95a1af1d\u0026LCID=1036\u0026Market=FR\u0026Locale=FR-FRA\u0026ZoneId=fc085e3791\u0026ZoneVer=240\u0026ProductId=SON3665540797413\u0027, eventInfo.serverParams, clientParams); }\r\n\r\n"
+,
+"jsBefore": "\r\nccs_define(\"jquery\", function () {\r\n window.ccsJq = window.jQuery || window.$;\r\n return window.ccsJq;\r\n}); \r\n\r\n\r\n"
+,
+"jsAfter": "/*\r\nccsJq(\".ccs-cc-inline-feature-content.ccs-cc-inline-feature-description\").children().attr(\"style\",\"\");\r\nccsJq(\".ccs-cc-inline-feature-content.ccs-cc-inline-feature-description span\").attr(\"style\",\"\");\r\n*/\r\n\r\n(function ($){\r\n    if(!$) return;\r\n$MPR = $(\u0027[id^=\"mobileprinting\"]\u0027);\r\n$INST = $(\u0027[id^=\"instantink\"]\u0027);\r\n$HPFT = $(\u0027[data-elementid=\"inline-content-footnotes[hp]\"]\u0027);\r\n  if ($MPR.length \u003e 0){\r\n  $MPR.find(\u0027 \u003e div\u0027).css(\u0027display\u0027,\u0027none\u0027);\r\n  $MPR.find(\u0027 \u003e h2 \u003e a\u0027).trigger(\u0027click\u0027);}\r\n  if ($INST.length \u003e 0){\r\n  $INST.find(\u0027 \u003e div\u0027).css(\u0027display\u0027,\u0027none\u0027);\r\n  $INST.find(\u0027 \u003e h2 \u003e a\u0027).trigger(\u0027click\u0027);}\r\n  if ($HPFT.length \u003e 0){\r\n  $HPFT.find(\u0027 \u003e div\u0027).css(\u0027display\u0027,\u0027none\u0027);\r\n  $HPFT.find(\u0027 \u003e h2 \u003e a\u0027).trigger(\u0027click\u0027);}\r\n\r\nvar $Eps = $(\u0027.ccs-cc-inline-eps\u0027);\r\nif ($Eps.length \u003e 0) {\r\n  $Eps.css(\u0027font-size\u0027,\u00271.2em\u0027);\r\n  $(\u0027.ccs-cc-comparison-table\u0027).css(\u0027font-size\u0027,\u002712px\u0027);\r\n};\r\n})(window.ccsJq);\r\n"
+,
+"inlineStyle": "\r\n"
+,
+"sites": [
+"cnetcontent.com","cnetcontentcast.com","cbsi.com","62.122.9.84","cdiscount.com","cdiscountpro.com","preprod-cdiscount.com","preprod-cdiscountpro.com","recette3-cdiscount.com","recette-cdiscount.com","recette-cdiscountpro.com","www.cornerhomme.com","www.moncornerbaby.com","www.moncornerbrico.com","www.moncornerdeco.com","www.moncornerjardin.com","www.preprod-cornerhomme.com","www.preprod-moncornerbaby.com","www.preprod-moncornerbrico.com","www.preprod-moncornerdeco.com","www.preprod-moncornerjardin.com","www.recette3-cornerhomme.com","www.recette3-moncornerbaby.com","www.recette3-moncornerbrico.com","www.recette3-moncornerdeco.com","www.recette3-moncornerjardin.com","www.recette-cornerhomme.com","www.recette-moncornerbaby.com","www.recette-moncornerbrico.com","www.recette-moncornerdeco.com","www.recette-moncornerjardin.com"]
+});

@@ -32,7 +32,7 @@ class MicromaniaScrapeResult(ScrapeResult):
 class MicromaniaScraper(Scraper):
     @staticmethod
     def get_domain():
-        return 'Micromania'
+        return 'micromania'
 
     @staticmethod
     def get_driver_type():

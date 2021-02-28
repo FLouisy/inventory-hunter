@@ -34,7 +34,7 @@ class CarrefourScrapeResult(ScrapeResult):
 class CarrefourScraper(Scraper):
     @staticmethod
     def get_domain():
-        return 'Carrefour'
+        return 'carrefour'
 
     @staticmethod
     def get_driver_type():

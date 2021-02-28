@@ -32,7 +32,7 @@ class FnacScrapeResult(ScrapeResult):
 class FnacScraper(Scraper):
     @staticmethod
     def get_domain():
-        return 'Fnac'
+        return 'fnac'
 
     @staticmethod
     def get_driver_type():

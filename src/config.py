@@ -1,5 +1,6 @@
 import urllib
 import yaml
+import logging
 
 from collections import Counter
 
@@ -33,11 +34,12 @@ class Config:
                 netloc = netloc.replace('www.', '')
             if netloc.endswith('.com'):
                 netloc = netloc.replace('.com', '')
+            if netloc.endswith('.fr'):
+                netloc = netloc.replace('.com', '')
             for c in ('a', 'e', 'i', 'o', 'u'):
                 netloc = netloc.replace(c, '')
             netloc = netloc.replace('.', '_')
-            print("NETLOC:")
-            print(netloc)
+            logging.warning(f'Netloc:  {netloc}')
             netloc_counter[netloc] += 1
             count = netloc_counter[netloc]
             nickname = f'{netloc}_{count}'

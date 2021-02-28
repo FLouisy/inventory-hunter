@@ -1,0 +1,24 @@
+/* #1946540554 */
+/* !pmid */_oEa.pmdenyall = 0;/* /!pmid */_oEa.hpmdeny = _oEa.hpmdeny || {};_oEa.pmpass = function( pmcat, tcfv2vendor, tcfv2purpose ) {var o = _oEa;return 1;};
+_oEa.website("fnac");if (_oEa.isdef(typeof _oEa.uidset )) {_oEa.uidset("5Og1isU46hZmYG3ziU_FV.6AIys7BsDJAqlqCC9R.XxX5Pn7G0e1bQ--");}var _EaCP = {"cgip" : _oEa.hcgi,"tp":{"":""}};_oEa.jsbwr = {'s'   : '//eultech.fnac.com/w.js', /* DomWrite */'pre' : function(){ _oEaDWR.capture(); },'post': function(){ _oEaDWR.render(_oEa.b); }};if (typeof _oEa.gloadtimeout !== 'function') {_oEa.gloadtimeout = function( to, id, tg ) {};}
+_oEa.dcrun = function( nc ) { /* nc: no consent */
+_oEa.xpathdc = {};
+if (!nc && _oEa.pmdenyall) { return; }
+};
+_oEa.mtrun = function( nc ) {
+_oEa.xpathmt = {};
+if (_oEa.pmdenyall) { return; }
+/* {ccmt:193,ccmth:193,isnative,view:0,hdlr:tag,mtpmcat:,ccmtn:facebook-mta-cm} */
+if ( !nc && _oEa.pmpass('',
+ '',''
+) )
+{
+try{
+/* Native */
+_oEa.gloadtimeout(5000,"DEQwyRwgEDJm_8YpRfjSIsNPpIpS5Yztq4i8Bism",_oEa.gloadimg("https://www.facebook.com/tr?id=764431610788770&ev=PageView&cd[order_id]=15355878763987283439&noscript=1"));
+ /* /mtjs */
+}catch(e){_oEa.log('ETM',e);}
+}
+};
+_oEa.mtdcrun = function() {var o = _oEa;o.mtrun();o.dcrun();};_oEa.mtdcrunNC = function() {_oEa.dcrun( 1 );_oEa.mtrun( 1 );};_oEa.mtdcrunNC();_oEa.mtdcrun();/* end !pmistcfv2 */_oEa.websiteend();
+ /* end !config */

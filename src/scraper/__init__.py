@@ -3,9 +3,12 @@ import scraper.amazon
 import scraper.bestbuy
 import scraper.bhphotovideo
 import scraper.canadacomputers
+import scraper.carrefour
 import scraper.costco
 import scraper.ebgames
+import scraper.fnac
 import scraper.microcenter
+import scraper.micromania
 import scraper.newegg
 import scraper.playstation
 import scraper.samsclub

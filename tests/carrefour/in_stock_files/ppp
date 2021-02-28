@@ -1,0 +1,57 @@
+/*** Copyright (C) 2000-2020 by Webcollage Inc. All rights reserved. ***/
+/*** Protected by US Patent 6,865,593 and pending patent applications ***/
+
+_wcmissingcontent = {
+  acssiteSig: "R01EYVXFL00K284IH",
+  minAcssiteSig: "R00ZPAJFQ00ZBTIKE",
+  onAcsSiteLoad: function() {
+    window.Webcollage.overrides.noPowerPageContentCallback();
+  }
+};
+
+window.Webcollage.terminatePowerPage = function () {
+    try {
+        var loadContentScript = document.getElementById("wcpp-load-content");
+        loadContentScript.parentNode.removeChild(loadContentScript);
+
+        window.Webcollage.terminatePowerPage = undefined;
+        window.Webcollage.initPowerPage = undefined;
+        window.Webcollage.playPowerPage = undefined;
+        window.Webcollage.stopPowerPage = undefined;
+        window.Webcollage.checkContentPlayStop = undefined;
+        window._wcmissingcontent = undefined;
+        try {
+          delete window.Webcollage.terminatePowerPage;
+          delete window.Webcollage.initPowerPage;
+          delete window.Webcollage.playPowerPage;
+          delete window.Webcollage.stopPowerPage;
+          delete window.Webcollage.checkContentPlayStop;
+          delete window._wcmissingcontent;
+        } catch (e){};
+    } catch(e){}
+};
+window.Webcollage.initPowerPage = window.Webcollage.playPowerPage = window.Webcollage.stopPowerPage = window.Webcollage.checkContentPlayStop = function(){};
+
+var _wcscript = document.createElement('script')
+_wcscript.setAttribute("type","text/javascript")
+_wcscript.setAttribute("id","wc-loaded-acssite");
+
+if (document.location.search.indexOf("wc-acs-libs=jit") >= 0) {
+  _wcscript.setAttribute("src", "https://content-preview.webcollage.net/aplus-partner-defs/carrefourfr/resources/connections/aplus/js/acssite%40s.js?wc-acs-libs=jit");
+} else {
+  if (_wcmissingcontent.acssiteSig.indexOf("R") == 0) {
+    var acsSiteUrl = Webcollage.minOrMax("https://scontent.webcollage.net/apps/pp/assets/carrefourfr/js/acssite%40s.js");
+    if (acsSiteUrl.lastIndexOf(".min.js") + 7 == acsSiteUrl.length)
+        _wcscript.setAttribute("src",  acsSiteUrl + "?ver=" + _wcmissingcontent.minAcssiteSig);
+    else
+        _wcscript.setAttribute("src",  acsSiteUrl + "?ver=" + _wcmissingcontent.acssiteSig);
+  } else
+    _wcscript.setAttribute("src", Webcollage.minOrMax("https://scontent.webcollage.net/carrefourfr/resources/connections/aplus/js/acssite%40s.js") + "?ver=69308fe5778ceea17ca46bc1dba1b088ce760a3a");
+}
+
+document.getElementsByTagName('head')[0].appendChild(_wcscript);
+
+if(window.Webcollage && typeof window.Webcollage.reportPageView == "function") {
+  window.Webcollage.reportPageView();
+}
+

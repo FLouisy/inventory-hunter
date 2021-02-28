@@ -36,6 +36,8 @@ class Config:
             for c in ('a', 'e', 'i', 'o', 'u'):
                 netloc = netloc.replace(c, '')
             netloc = netloc.replace('.', '_')
+            print("NETLOC:")
+            print(netloc)
             netloc_counter[netloc] += 1
             count = netloc_counter[netloc]
             nickname = f'{netloc}_{count}'

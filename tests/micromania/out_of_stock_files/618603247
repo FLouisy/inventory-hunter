@@ -1,0 +1,13 @@
+/* #472417557 */
+/* !pmid */_oEa.pmdenyall = 0;/* /!pmid */_oEa.hpmdeny = _oEa.hpmdeny || {};_oEa.pmpass = function( pmcat, tcfv2vendor, tcfv2purpose ) {var o = _oEa;return 1;};
+_oEa.website("fnac");if (_oEa.isdef(typeof _oEa.uidset )) {_oEa.uidset("I5N11XoAcQvnCDQjEKpt.8zWLAn7Wd4wJj07XQHRqoufw49fEUEH9A--");}var _EaCP = {"cgip" : _oEa.hcgi,"tp":{"":""}};
+_oEa.dcrun = function( nc ) { /* nc: no consent */
+_oEa.xpathdc = {};
+if (!nc && _oEa.pmdenyall) { return; }
+};
+_oEa.mtrun = function( nc ) {
+_oEa.xpathmt = {};
+if (_oEa.pmdenyall) { return; }
+};
+_oEa.mtdcrun = function() {var o = _oEa;o.mtrun();o.dcrun();};_oEa.mtdcrunNC = function() {_oEa.dcrun( 1 );_oEa.mtrun( 1 );};_oEa.mtdcrunNC();_oEa.mtdcrun();/* end !pmistcfv2 */_oEa.websiteend();
+ /* end !config */
